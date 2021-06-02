@@ -1,0 +1,60 @@
+---- Keterangan ----
+1. Apa itu API secara detail ?
+   - Menurut Wikipedia:
+     - "Gaya arsitektural perangkat lunak yang didalamnya mendefinisikan aturan-aturan untuk membuat web service"
+     - Jadi sebetulnya web API adalah sebuah style atau gaya ngoding saja dan bukan aturan baku ataupun standar, jika
+       tidak mengikuti semua yang ada di dalamnya sebetulnya Rest API nya mesih tetap bisa dibuat dan berjalan
+     - API == Rest API
+
+2. Ilustrasi API:
+   - API adalah penghubung
+   - Rest API adalah aturannya
+   - Ada Request dan Response
+   - Data yang dikirim / diterima berupa JSON
+
+3. REST API:
+   - REpresentasional State Transfer
+   - Gaya perancangan / Architerctural style
+   - Stateless
+   - By. Roy Fielding, di desertasi Phd-nya
+     - Link:
+       - https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGxpbE05R3RtSkxlYnBXVndoV3g3UzF3LUdJZ3xBQ3Jtc0trbWNGVTlqNVN2cDc5MnIwelByZHRLTXZoZnBJOHM3YzU0V2Q3VFByZC1aOWk0TzdnS3ZjZ1VyMU5qVmhnVWZrZ09MNjdZUTdRT2JoUFdOS09peVhTOFJkXzVJdWhjVzIycm1sZm1KZVRYUEdGR2VWOA&q=https%3A%2F%2Fwww.ics.uci.edu%2F%7Efielding%2Fpubs%2Fdissertation%2Ffielding_dissertation.pdf
+   - Hampir selalu menggunakan HTTP
+   - Memungkinkan interaksi antara mesin dengan mesin
+   - HTTP (Hypertext markup language):
+     - URL (Uniform Resource Locator)
+       - Sebuah alamat untuk mengakses sumber daya atau resource yang dapat diakses di internet
+       - https://www.facebook.com/intex.php 
+         - Resource nya adalah /index.php
+       - Meskipun bisa diubah dengan mod_rewrite atau .htaccess
+
+4. Kode Status:
+    - 200 - Success
+    - 404 - Not Found
+    - 500 - Server Error
+    - Kenapa butuh kode status :
+      - Agar Error pada aplikasi dapat dikirimkan oleh komputer dan dapat dibaca dengan bahasa manusia
+        serta dapat diperbaiki oleh manusia (Pengmbang)
+
+5. HTTP Method / Verbs:
+    - Get:
+      - Mengambil data
+    - POST:
+      - Menambah data
+    - PUT:
+      - Mengubah data
+    - Delete:
+      - Menghapus data
+    - Put dan delete tidak bisa menggunakan browser
+
+6. Stateless:
+    - Setiap request HTTP dilakukan secara terisolasi
+    - Server tidak menyimpan state apapun mengenai sesi client
+    - Setiap request dari client harus berisi semua informasi yang dibutuhkan server, termasuk informasi otentikasi
+
+7. RESTful API:
+    - Menggunakan HTTP method yang benar
+    - URL / endpoints nya menggunakan kata benda, bukan kata kerja
+    - Stateless
+    - Perbedaan Rest dan RESTful
+      - RESTful itu menggunakan Rest secara benar
