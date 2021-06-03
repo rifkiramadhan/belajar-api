@@ -1,0 +1,86 @@
+---- Keterangan JSON ----
+
+1. Apa itu JSON ?
+    - Menurut Wikipedia:
+      - "JavaScript Object Notation (JSON) adalah sebuah file format standar yang menggunakan tulisan yang
+        dapat dibaca oleh manusia untuk pertukaran data, yang di dalamnya berisi pasangan antara key dan value"
+
+2. JSON:
+    - Format pertukaran data tekstual yang sangat ringan
+    - Sintaksnya sangat sederhana dan jelas (dibanding XML)
+    - Dapat digunakan pada beragam bahasa pemrograman
+    - Tiap bahasa pemrograman memiliki cara sendiri untuk berinteraksi dengan JSON
+    - Dibuat berdasarkan format object pada JavaScript
+    - Digunakan juga untuk file konfigurasi (tidak disarankan)
+    - Tipe file JSON memiliki ekstensi .json
+    - Format JSON dibuat dan diusulkan oleh Douglas Crockford
+
+3. Json vs XML:
+    - Json:
+      - {
+          "mahasiswa":
+          [
+              {
+                  "nama"    : "Rifki Ramadhan",
+                  "nrp"     : "123456",
+                  "email"   : "riifkiramadhan2@gmail.com",
+                  "jurusan" : "Teknik Informatika"
+              },
+              {
+                  "nama"    : "Rayani Putri Umika Rambe",
+                  "nrp"     : "789101112",
+                  "emai"    : "rayaniputriumikarambe@gmail.com",
+                  "jurusan" : "Teknik Informatika"
+              }
+          ]
+      }
+    - Dibuat berdasarkan format object pada JavaScript
+    - Key selalu dibungkus menggunakan ""
+    - Tipe data dari value pada JSON itu bebas:
+      - Boolean - true/false
+      - Array - ["value1", "value2", ...];
+      - String - teks/unicode, dibungkus menggunakan ""
+      - Object - {"key", "value"}
+      - Number - integer/float
+      - Null - null
+    
+    - XML:
+      - <unpas>
+            <mahasiswa>
+                <nama>Rifki Ramadhan</nama>
+                <nrp>123456</nrp>
+                <email>riifkiramadhan2@gmail.com</emai>
+                <jurusan>Teknik Informatika</jurusan>
+            </mahasiswa>
+            <mahasiswa>
+                <nama>Rayani Putri Umika Rambe</nama>
+                <nrp>789101112</nrp>
+                <email>rayaniputriumikarambe@gmail.com</emai>
+                <jurusan>Teknik Informatika</jurusan>
+            </mahasiswa>
+        </unpas>
+      - Sintaksnya mirip html, ada tag pembuka dan ada tag penutup
+      - XML ukuran file nya lebih besar dari pada JSON
+
+4. Object:
+   - Menurut Mozilla:
+     - "Object pada JavaScript adalah kumpulan property, dan property ditulis dalam bentuk pasangan
+       antara key dan value"
+
+5. JSON pada PHP:
+   - json_encode():
+     - Untuk mengubah array atau object yang dimiliki pengembang menjadi json, agar dapat diakses pengembang lainnya
+   - json_decode():
+     - Untuk mengambil json diubah menjadi array supaya mudah untuk dimanipulasi
+   - Mengakses JSON:
+     - file_get_contents()
+
+6. JSON pada JavaScript:
+   - JSON.stringify()
+     - Untuk mengubah object menjadi json
+   - JSON.parse()
+     - Untuk mengubah json menjadi object
+   - Mengakses JSON:
+     - AJAX:
+       - XMLHttpRequest
+       - JQuery

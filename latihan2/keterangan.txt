@@ -1,0 +1,18 @@
+---- Keterangan ---
+
+1. Same-origin Policy:
+   - Kebijakan browser untuk mengakses dan menampilkan data / script / document dari tempat
+     lain diluar domain-nya
+   - Membuat kita tidak bisa mengakses data (.json) dari luar / website kita
+
+2. CORS (Cross Origin Resource Sharing):
+   - Mekanisme yang membuat kita dapat mengakses sebuah resource (data, document, script) dari domain lain
+   - Caranya adalah dengan membuat server memperbolehkan adanya akses data dari luar domain
+   - Modifikasi Access-Control-Allow-Origin
+   - Membuat file .htaccess
+   - Contoh:
+     - <ifmodule mod_headers.c>
+            Header set Access-Control-Allow-Origin "*"
+       </ifmodule>
+
+3. JSONP

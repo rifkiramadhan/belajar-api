@@ -1,4 +1,4 @@
----- Keterangan ----
+---- Keterangan API Detail ----
 1. Apa itu API secara detail ?
    - Menurut Wikipedia:
      - "Gaya arsitektural perangkat lunak yang didalamnya mendefinisikan aturan-aturan untuk membuat web service"

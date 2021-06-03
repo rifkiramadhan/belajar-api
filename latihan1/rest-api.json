@@ -1,0 +1,32 @@
+[
+    {
+        "nama": "Rifki Ramadhan",
+        "umur": 22,
+        "nrp": "123456",
+        "lulus": true,
+        "hobby": [
+            "Ngoding",
+            "Gamming",
+            "Membaca Buku"
+        ],
+        "pembimbing": {
+            "pembimbing1": "Gak Tau 1",
+            "pembimbing2": "Gak Tau 2"
+        }
+    },
+    {
+        "nama": "Rifki Ramadhan",
+        "umur": 22,
+        "nrp": "123456",
+        "lulus": true,
+        "hobby": [
+            "Ngoding",
+            "Gamming",
+            "Membaca Buku"
+        ],
+        "pembimbing": {
+            "pembimbing1": "Gak Tau 1",
+            "pembimbing2": "Gak Tau 2"
+        }
+    }
+]
