@@ -17,12 +17,12 @@
     // $data = json_encode($mahasiswa);
     // echo $data;
 
-    $dbh = new PDO('mysql:host=localhost;dbname=db_restoran', 'root', '');
-    $db = $dbh->prepare('SELECT * FROM tb_level');
+    $dbh = new PDO('mysql:host=localhost;dbname=phpmvc', 'root', '');
+    $db = $dbh->prepare('SELECT * FROM mahasiswa');
     $db->execute();
-    $tb_level = $db->fetchAll(PDO::FETCH_ASSOC);
+    $mahasiswa = $db->fetchAll(PDO::FETCH_ASSOC);
 
-    $data = json_encode($tb_level);
+    $data = json_encode($mahasiswa);
     echo $data;
 
 ?>
