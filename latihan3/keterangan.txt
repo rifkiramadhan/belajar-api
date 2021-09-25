@@ -1,0 +1,31 @@
+---- Keterangan ----
+1. Pengertian :
+   - Public API / Open API
+     - Adalah sebuah API (REST API) yang dapat diakses secara publik, yang di dalamnya tersedia
+       aturan untuk developer agar dapat mengakses data
+     - Jadi developer di luar aplikasi itu bisa terhubung dengan aturan-aturan yang sudah disediakan oleh
+       REST API nya
+     - https://any-api.com/
+       - Kita dapat melihat API yang geratis maupun yang berbayar
+     - https://github.com/toddmotto/public-apis
+       - Kita dapat melihat seluruh jenis API yang ada di dunia ini yang dapat kita gunakan
+     - https://github.com/farizdotid
+       - Kita dapat melihat seluruh jenis API yang ada di indonesia yang dapat kita gunakan
+   - Otentikasi (Auth)
+     - Tanpa Otentikasi
+       - Kita dapat menggunakannya secara bebas, tapi begitu kita terhubung ke dalam sebuah API itu artinya kita
+         juga mengambil resource dari server mereka, meskipun kita mengambil datanya tetap saja ada proses upload dari
+         sisi server mereka, tentu saja tanpa Otentikasi kita dapat mengakses kapanpun, berapa kali pun, itu akan 
+         menghabiskan resource mereka
+     - Key / Token
+       - Ini biasanya untuk mengakses sebuah REST API milik oranglain, meerka menyediakan sebuah key yang key nya biasanya
+         terbatas, contohnya ada sebuah REST API yang apa bila kita ingin menggunakannya kita harus membuat terlebih dahulu
+         key nya, kita daftar terlebih dahulu pada websitenya, nanti mereka menyediakan key dan key itu misalnya itu hanya bisa
+         dipakai 1000 kali dalam 1 hari, dan jika lebih dari 1000 kali maka website itu tidak dapat dipakai
+     - OAuth
+       - Ketika ingin masuk ke dalam aplikasi manapun tapi sistem loginnya misalnya via facebook, atau via google
+     - CORS
+       - Jadi REST Server atau Public API atau Open API ini juga ada aturan CORS nya, ada yang memungkinkan kita tidak dapat 
+         sembarangan akses karena ada CORS nya, tapi biasanya itu semua sudah ada di dokumentasi aplikasinya
+  - https://keycode.info/
+    - Untuk melihat kode keyboard
