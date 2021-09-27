@@ -1,0 +1,23 @@
+---- Keterangan ----
+
+1. API Client
+   - file_get_contents()
+     - Fungsi ini dapat digunakan juga ketika kita mengkoneksikan ke dalam public API dan tinggal mengganti saja URL nya
+   - ajax
+     - Berfungsi untuk melakukan http request melalui browser kita menggunakan teknologi ajax, bisa menggunakan Vanilla JS
+       (JavaScript Murni) atau juga bisa menggunakan bantuan dari jQuery
+   - cURL (Client URL)
+     - curl_init
+       - Adalah variasi lain untuk mengkoneksikan API kedalam PHP berfungsi untuk menginisialisasikan fungsi dari cURL nya
+     - cURL juga dapat digunakan untuk Get dan juga PUT tergantung mengeset opsi-opsinya
+
+2. Perbedaan
+   - Jika menggunakan ajax itu lebih cepat diakses dari pada menggunakan PHP, artinya menggunakan file_get_contents dan
+     cURL lebih lambat dari pada ajax
+   - Tapi yang harus diperhatikan jika menggunakan ajax maka orang lain itu akan bisa melihat key nya, karena semuanya
+     dikerjakan di client, tetapi sebenarnya tidak masalah jika key nya dilihat oleh orang lain jika dicari melalui 
+     inspect element tapi dikhawatirkan akan terjadi hacking atau penyalah gunaan data, jadi jika ingin mengamankan
+     key nya menggunakan ajax itu ada cara yang lain
+     - Bisa menggunakan Login, agar key nya tidak bisa dilihat oleh orang lain
+   - Jika menggunakan PHP itu key nya tidak akan terlihat, karena begitu dibuka melalui inspect element kan yang terlihat
+     hanya script HTML nya saja     

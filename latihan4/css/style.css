@@ -1,0 +1,15 @@
+section {
+    min-height: 420px;
+    padding-top: 12px;
+}
+
+.ig-thumbnail{
+    width: 100px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+}
+
+.ig-thumbnail img {
+    width: 100px;
+}
