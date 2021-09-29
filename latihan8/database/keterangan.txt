@@ -1,0 +1,75 @@
+---- Keterangan Latihan 3 (Bagian 3) ----
+
+1. Pengertian
+   - Codeigniter
+     - Salah satu framework yang mudah dipelajari terutama untuk para pemula daripada web application framework yang lain, dan terutama
+       jika sudah mengikuti serie PHP MVC itu sangat membantu untuk memahami penggunaan codeigniter 
+   - Folder application & system
+     - Adalah kedua folder codeigniternya, seperti di PHP MVC itu membuat folder app dan public, artinya sama anggap
+       saja kedua folder itu mewakili kedua folder ini
+     - Untuk folder system tidak perlu melakukan modifikasi untuk folder ini, jadi biasanya folder ini dibiarkan saja
+       dan jangan diubah-ubah apa lagi dihapus nanti codeigniternya tidak akan berjalan
+     - Tetapi kita perlu memodifikasi yang ada di dalam folder application, disana terdapat banyak folder tetapi tidak
+       semua folder dipakai, tetapi secara umum terdapat 3 folder yang sama dengan folder pada PHP MVC, yaitu
+       - models
+       - views
+       - controllers
+     - Jadi secara default begitu kita install codeigniternya maka kita akan mendapatkan konsep arsitektur MVC nya yang
+       dapat kita gunakan pada folder application
+   - Folder test
+     - Adalah sebuah folder untuk melakukan unit testing atau pengujian pada aplikasi
+   - Folder user_guide
+     - Berfungsi untuk dokumentasi secara offline, jadi ini bisa diakses jika pengguna membutuhkan dokumentasi codeigniternya
+   - File index.php
+     - Ini merupakan file bootstrapnya, sama seperti yang telah kita buat di PHP MVC, jadi sebetulnya yang telah kita buat
+       pada PHP MVC itu sudah mendekati atau menyerupai framework codeigniternya yang versi 3
+     - Harapannya belajar codeigniter tidak jauh berbeda
+   - Query Builder
+     - Berfungsi untuk mempermudah kita dalam membuat fitur apapun
+   - base_url()
+     - Adalah merupakan bagian dari module URL yang module itu secara default belum aktif, jadi ketika ingin menggunakan fungsi
+       ini kita aktifkan terlebih dahulu module nya
+       - Dengan cara mengisi text array('url') ke dalam $autoload['helper'] = array(); karena ini sangat cocok
+   - Form Validation
+     - Berfungsi untuk membuat form validasi dari module bawaan dari codeigniter
+   - Folder system/language/form_validation_lang.php
+     - Ini adalah untuk menyimpan pesan-pesan kesalahan dalam bahasa inggris bawaan codeigniter, tetapi jangan di edit dari filenya
+       tetapi dicopy saja seluruh isi dari file nya kemudian buat file form_validation_lang.php dan paste ke dalam folder 
+       - application/language/english/form_validation_lang.php
+   - redirect()
+     - Memindahkan file dari sisi A ke B
+   - Membuat query insert bawaan codeigniter seperti html specialchars 
+     - "nama" => $this->input->post('nama', true),
+       - Untuk mengamankan website dari serangan SQL Injection dengan cara yang simple
+   - CI_Session::flashdata
+     - Datanya hanya ada satu kali dalam satu halaman begitu pindah ke halaman lain atau refresh halaman yang sama maka datanya akan hilang / di hide
+     - Merupakan bagian dari module CI_Session karena dia menggunakan session, kalau menggunakan module session maka kita harus mengaktifkan terlebih dahulu
+     - Kelebihan codeigniter tidak perlu menggunakan isset kedalam session
+   - Perbedaan base_url() dengan site_url()
+     - site_url()
+       - $config['index_page'] = 'index.php'; Line 26 Ci V 3.1.9
+       - Kalau misalnya di dalam konfigurasi tidak menghilangkan index.php ditengah url, maka nanti akan muncul index.php nya pada site url nya
+     - base_url()
+       - $config['index_page'] = 'index.php'; Line 26 Ci V 3.1.9
+       - Meskipun tidak mengahapus index.php nya di dalam base url maka automatice tidak ada index.php nya
+     - Sebenarnya sama saja berfungsi untuk menampilkan atau mengambil alamat dari aplikasi kita
+   - $this->db->get_where('mahasiswa', ['id' => $id])->result_array();
+     - Hanya menghasilkan satu elemen array
+   - $this->db->get_where('mahasiswa', ['id' => $id])->row_array();
+     - Hanya menghasilkan object of array
+   - validation_errors()
+     - Untuk menampilkan seluruh validasi error nya
+   - 
+
+2. Rangkuman
+   - Jika codeigniternya berhasil dijalankan dan menampilkan screening welcome, maka sama seperti aplikasi MVC kita, codeigniternya
+     sudah menjalankan controllers default dan controllers default nya sudah menjalankan method default, di dalam method defaultnya
+     codeigniternya sudah memanggil views default, jadi secara umum arsitekturnya mirip dengan PHP MVC, dan kebetulan controllers
+     defaultnya namanya welcome
+   - Jika kita ingin mengkoneksikan ke dalam database adalah kita harus memanggil terlebih dahulu sebuah module yang namanya database
+     - $this->load->database();
+     - Maka nanti automatice seluruh method yang tersedia didalam scope nya akan terkoneksi ke dalam database kita
+   - Dalam menggunakan codeigniter jika ingin menggunakan sesuatu maka harus di load terlebih dahulu datanya
+   - Jika satu controller ingin menggunakan load nya maka harus membuat constructornya
+   - Kita telah membuat REST Client sederhana yang datanya telah kita buat sendiri dengan database MySQL, tetapi kita tidak menambahkan
+     fitur pencarian ke dalam aplikasi yang kita buat

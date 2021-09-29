@@ -1,0 +1,20 @@
+---- Keterangan ----
+
+1. Pengertian
+   - Restfull API
+     - Bisa dipakai untuk beberapa method
+   - Folder Controllers/Rest_server.php
+     - Untuk menggantikan halaman utama / welcome pada codeigniter
+   - Folder Controllers/api/Example.php
+     - Untuk melihat example Rest Server Codeigniter, jadi jika ingin dipelajari silahkan dipelajari dari file example nya
+   - Folder Controllers/api/Mahasiswa.php
+     - Untuk membuat Controllers dari endpoints nya
+   - $this->method['METHOD_NAME']['limit'] = [NUM_REQUESTS_PER_HOUR];
+     - Method ini digunakan untuk mengatur limit per berapa kali digunakan per jam
+
+2. Rangkuman
+   - Untuk membuat sebuah Rest Server ini kita akan menggunakan sebuah library buatan orang lain
+     - Link Rest Server:
+       - https://github.com/chriskacerguis/codeigniter-restserver/tree/f3ba7d76cb14c11602f72b432926a17b8ff7c590
+   - Jika kita tidak menggunakan request method nya Get, selain Get itu params nya pada postman kita mengirimnya di fitur body bukan di params
+     lalu pilih x-www.form-urlencoded

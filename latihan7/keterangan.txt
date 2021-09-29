@@ -1,0 +1,15 @@
+---- Keterangan ----
+
+1. Pengertian
+   - REST Client
+     - file_get_contents()
+       - Berfungsi untuk mengambil sebuah data yang dapat dicoba ke data JSON maupun langsung mengambil ke sebuah REST Server atau REST API
+     - ajax
+       - Membuat aplikasi rest client sederhana menggunakan ajax
+     - cURL
+       - Untuk membuat rest client dari bahasa pemrograman PHP
+     - Guzzle
+       - Library ini adalah sebuah http client dimana kita bisa melakukan request terhadap sebuah REST Server dengan sangat mudah, sebetulnya
+         kita dapat membuat REST Client itu menggunakan cURL, tapi cukup banyak konfigurasi yang harus dilakukan, maka supaya simple kita
+         menggunakan Guzzle
+       - Link: https://docs.guzzlephp.org/
