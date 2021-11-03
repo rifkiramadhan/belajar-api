@@ -4,7 +4,7 @@
 ### Mysql adalah DBMS (Database management system), dan bukanlah Database atau API
 
 ### Menurut Wikipedia:
-- "API (Application Programming Interface) adalah sekumpulan fungsi, subroutine, protokol komunikasi atau kakas / tools untuk membuat perangkat lunak
+- "API (Application Programming Interface)" adalah sekumpulan fungsi, subroutine, protokol komunikasi atau kakas / tools untuk membuat perangkat lunak
 - Interface / antarmuka:
   - "Bagian yang sama antara dua atau lebih komponen terpisah pada sebuah sistem komputer"
   - Jadi ada dua buah komponen terpisah yang merupakan bagian yang sama untuk saling terhubung antar satu dan lainnya
